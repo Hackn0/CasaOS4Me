@@ -9,7 +9,7 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/Hackn0/$AppID/config
+        source: /DATA/AppData/Hackn0/$AppID/app/config
         target: /app/config
       - type: bind
         source: //var/run/docker.sock
