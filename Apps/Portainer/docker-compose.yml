@@ -41,8 +41,6 @@ services:
 x-casaos:
   architectures:
     - amd64
-    - arm
-    - arm64
   author: Cp0204
   category: Hackn0
   description:

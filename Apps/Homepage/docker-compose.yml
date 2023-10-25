@@ -19,8 +19,6 @@ services:
 x-casaos:
   architectures:
     - amd64
-    - arm
-    - arm64
   author: homepage
   category: Hackn0
   description:
