@@ -43,6 +43,6 @@ x-casaos:
   screenshot_link:
     - https://cdn.jsdelivr.net/gh/mariosemes/CasaOS-TMCstore@main/Apps/stirling-pdf/screenshot-01.png
   thumbnail: https://cdn.jsdelivr.net/gh/mariosemes/CasaOS-TMCstore@main/Apps/stirling-pdf/thumbnail.png
-  author: Hackn0
+  author: stirling
   category: Hackn0
-  store_app_id: homepage
+  store_app_id: stirlingpdf

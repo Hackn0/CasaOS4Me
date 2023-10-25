@@ -42,12 +42,13 @@ x-casaos:
   tagline:
     en_us: An automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic.
   developer: LinuxServer.io
-  store_app_id: medusa
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/medusa-icon.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/medusa-icon.png
   title:
     en_us: Medusa
   project_url: https://github.com/pymedusa/Medusa
   port_map: '8081'
-  author: Hackn0
+  author: linuxserver
   category: Hackn0
+  store_app_id: medusa
+

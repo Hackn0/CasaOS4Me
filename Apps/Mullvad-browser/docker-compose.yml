@@ -46,6 +46,6 @@ x-casaos:
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mullvad-browser-logo.png
   title:
     en_us: Mullvad browser
-  author: Hackn0
+  author: linuxserver
   category: Hackn0
   store_app_id: mullvad

@@ -33,11 +33,11 @@ x-casaos:
   tagline:
     en_us: Run A Speedtest Every Hour And Graph The Results.  See Https://hub.docker.com/r/henrywhitaker3/speedtest-tracker/tags For Arch Options
   developer: ''
-  store_app_id: speedtest
   icon: https://raw.githubusercontent.com/henrywhitaker3/Speedtest-Tracker/master/public/icons/fav/ms-icon-144x144.png
   thumbnail: https://raw.githubusercontent.com/henrywhitaker3/Speedtest-Tracker/master/public/icons/fav/ms-icon-144x144.png
   title:
     en_us: Speedtest Tracker
   port_map: '8765'
-  author: Hackn0
+  author: henrywhitaker3
   category: Hackn0
+  store_app_id: speedtest

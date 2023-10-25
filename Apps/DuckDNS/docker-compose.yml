@@ -55,6 +55,6 @@ x-casaos:
   title:
     en_us: Duckdns
   project_url: https://www.duckdns.org/
-  author: Hackn0
+  author: linuxserver
   category: Hackn0
-  store_app_id: homepage
+  store_app_id: duckdns

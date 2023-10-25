@@ -19,9 +19,6 @@ services:
 x-casaos:
   architectures:
     - amd64
-  author: Hackn0
-  category: Hackn0
-  store_app_id: homepage
   description:
     en_us: A modern, fully static, fast, secure fully proxied, highly customizable application dashboard with integrations for over 100 services and translations into multiple languages. Easily configured via YAML files or through docker label discovery.
   developer: homepage
@@ -34,3 +31,6 @@ x-casaos:
     en_us: A modern, fully static, fast, secure fully proxied, highly customizable application dashboard with integrations for over 100 services and translations into multiple languages. Easily configured via YAML files or through docker label discovery.
   title:
     en_us: Homepage
+  author: gethomepage
+  category: Hackn0
+  store_app_id: homepage
