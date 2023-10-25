@@ -1,4 +1,4 @@
-name: speedtest-tracker-Hackn0
+name: speedtest-tracker
 services:
   app:
     image: henrywhitaker3/speedtest-tracker:dev
@@ -19,11 +19,13 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/Hackn0/$AppID/config
+        source: /DATA/AppData/$AppID/config
         target: /config
 x-casaos:
   architectures:
     - amd64
+    - arm
+    - arm64
   main: app
   description:
     en_us: Run a Speedtest every hour and graph the results.  See https://hub.docker.com/r/henrywhitaker3/speedtest-tracker/tags for arch options
