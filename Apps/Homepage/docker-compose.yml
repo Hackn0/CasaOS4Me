@@ -1,9 +1,9 @@
 # Configuration for homepage setup
 
-# Name of the big-bear-homepage application
-name: big-bear-homepage
+# Name of the homepage application
+name: Hackn0-homepage
 
-# Service definitions for the big-bear-homepage application
+# Service definitions for the homepage application
 services:
   # Service name: app
   # The `app` service definition
