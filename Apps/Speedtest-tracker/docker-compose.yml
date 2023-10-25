@@ -1,4 +1,4 @@
-name: speedtest-tracker
+name: speedtest
 services:
   app:
     container_name: speedtest

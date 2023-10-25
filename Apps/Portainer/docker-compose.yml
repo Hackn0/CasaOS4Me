@@ -1,4 +1,4 @@
-name: portainer-hackn0
+name: portainer
 services:
   portainer:
     container_name: portainer

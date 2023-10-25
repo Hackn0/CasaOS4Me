@@ -1,4 +1,4 @@
-name: homepage-hackn0
+name: homepage
 services:
   app:
     container_name: homepage

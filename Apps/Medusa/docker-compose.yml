@@ -1,4 +1,4 @@
-name: medusa-hackn0
+name: medusa
 services:
   app:
     container_name: medusa

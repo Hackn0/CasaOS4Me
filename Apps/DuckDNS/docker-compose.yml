@@ -1,4 +1,4 @@
-name: linuxserver-duckdns
+name: duckdns
 services:
   app:
     container_name: duckdns
