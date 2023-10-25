@@ -26,7 +26,7 @@ x-casaos:
     - arm
     - arm64
   author: watchtower
-  category: Hackn0CasaOS
+  category: Hackn0
   description:
     en_us: A container-based solution for automating Docker container base image updates.
   developer: watchtower

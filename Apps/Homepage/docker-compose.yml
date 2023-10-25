@@ -1,45 +1,38 @@
-# Configuration for homepage setup
-
-name: Hackn0-homepage
-
+name: homepage-hackn0
 services:
   app:
-    image: ghcr.io/gethomepage/homepage:latest
     container_name: homepage
+    image: ghcr.io/gethomepage/homepage:latest
     ports:
-      - 3000:3000 # Maps port 3000 of the host to port 3000 of the container
+      - target: 3000
+        published: ${WEBUI_PORT:-3000}
+        protocol: tcp
     volumes:
-      - /DATA/AppData/$AppID/config:/app/config
-      - /var/run/docker.sock:/var/run/docker.sock
-    x-casaos: # CasaOS specific configuration
-      volumes:
-        - container: /app/config
-          description:
-            en_us: "Container Path: /app/config"
-        - container: /var/run/docker.sock
-          description:
-            en_us: "Container Path: /var/run/docker.sock"
-      ports:
-        - container: "3000"
-          description:
-            en_us: "Container Port: 3000"
+      - type: bind
+        source: /DATA/AppData/Hackn0/$AppID/config
+        target: /app/config
+      - type: bind
+        source: //var/run/docker.sock
+        target: /var/run/docker.sock
+    restart: unless-stopped
 
-# CasaOS specific configuration
 x-casaos:
   architectures:
     - amd64
+    - arm
     - arm64
-  main: app
+  author: homepage
+  category: Hackn0
   description:
     en_us: A modern, fully static, fast, secure fully proxied, highly customizable application dashboard with integrations for over 100 services and translations into multiple languages. Easily configured via YAML files or through docker label discovery.
-  tagline:
-    en_us: Homepage
-  developer: "https://github.com/gethomepage/homepage"
-  author: Hackn0
+  developer: homepage
   icon: https://gethomepage.dev/main/assets/light_squircle@2x.png
-  thumbnail: ""
+  index: /
+  main: app
+  port_map: ${WEBUI_PORT:-3000}
+  scheme: http
+  tagline:
+    en_us: A modern, fully static, fast, secure fully proxied, highly customizable application dashboard with integrations for over 100 services and translations into multiple languages. Easily configured via YAML files or through docker label discovery.
+  store_app_id: homepage-hackn0
   title:
-    # Title in English
     en_us: Homepage
-  category: Hackn0CasaOS
-  port_map: "3000"
