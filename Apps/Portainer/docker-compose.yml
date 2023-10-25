@@ -21,7 +21,7 @@ services:
     restart: unless-stopped
     volumes:
       - type: bind
-        source: /DATA/AppData/portainer/data
+        source: /DATA/AppData/Hackn0/$AppID/data
         target: /data
       - type: bind
         source: /var/run/docker.sock
@@ -41,8 +41,6 @@ services:
 x-casaos:
   architectures:
     - amd64
-  author: Cp0204
-  category: Hackn0
   store_app_id: portainer
   description:
     en_us: Portainer is a lightweight management UI which allows you to easily manage your Docker environments. It is designed to be easy to use and offers full control over your Docker hosts and containers.
@@ -61,3 +59,5 @@ x-casaos:
   index: /
   port_map: "9000"
   scheme: http
+  author: Hackn0
+  category: Hackn0

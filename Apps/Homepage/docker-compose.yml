@@ -19,7 +19,7 @@ services:
 x-casaos:
   architectures:
     - amd64
-  author: homepage
+  author: Hackn0
   category: Hackn0
   store_app_id: homepage
   description:

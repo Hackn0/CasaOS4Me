@@ -20,7 +20,7 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/$AppID/config
+        source: /DATA/AppData/Hackn0/$AppID/config
         target: /config
 x-casaos:
   architectures:
@@ -34,10 +34,10 @@ x-casaos:
     en_us: Run A Speedtest Every Hour And Graph The Results.  See Https://hub.docker.com/r/henrywhitaker3/speedtest-tracker/tags For Arch Options
   developer: ''
   store_app_id: speedtest
-  author: WisdomSky
   icon: https://raw.githubusercontent.com/henrywhitaker3/Speedtest-Tracker/master/public/icons/fav/ms-icon-144x144.png
   thumbnail: https://raw.githubusercontent.com/henrywhitaker3/Speedtest-Tracker/master/public/icons/fav/ms-icon-144x144.png
   title:
     en_us: Speedtest Tracker
-  category: Hackn0
   port_map: '8765'
+  author: Hackn0
+  category: Hackn0

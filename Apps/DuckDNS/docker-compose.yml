@@ -1,0 +1,60 @@
+name: linuxserver-duckdns
+services:
+  app:
+    container_name: duckdns
+    image: linuxserver/duckdns:latest
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      SUBDOMAINS: ''
+      TOKEN: ''
+      UPDATE_IP: ''
+      LOG_FILE: ''
+    x-casaos:
+      envs:
+        - container: PUID
+          description:
+            en_us: for UserID
+        - container: PGID
+          description:
+            en_us: for GroupID
+        - container: TZ
+          description:
+            en_us: specify a timezone to use, see this list.
+        - container: SUBDOMAINS
+          description:
+            en_us: multiple subdomains allowed, comma separated, no spaces, if your domain is user.duckdns.org you put user, not a sub-subdomain
+        - container: TOKEN
+          description:
+            en_us: DuckDNS token
+        - container: UPDATE_IP
+          description:
+            en_us: Set to ipv6 or ipv4 to update  only your public IPv4/6 address. Set to both to update IPv6 and IPv4 address. This variable makes use of a third-party service. Omitting this variable uses DuckDNS for detection and only supports IPv4. both and ipv6 modes needs host networking.
+        - container: LOG_FILE
+          description:
+            en_us: Set to true to log to file (also need to map /config).
+      volumes: []
+    volumes:
+      - type: bind
+        source: /DATA/AppData/Hackn0/$AppID/config
+        target: /config
+x-casaos:
+  architectures:
+    - amd64
+    - arm64
+  main: app
+  description:
+    en_us: 'Visit homepage: https://hub.docker.com/r/linuxserver/duckdns/'
+  tagline:
+    en_us: A free service which will point a DNS (sub domains of duckdns. Org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence.
+  developer: LinuxServer.io
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/duckdns.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/duckdns.png
+  title:
+    en_us: Duckdns
+  project_url: https://www.duckdns.org/
+  author: Hackn0
+  category: Hackn0
+  store_app_id: homepage
