@@ -47,6 +47,6 @@ x-casaos:
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/medusa-icon.png
   title:
     en_us: Medusa
-  category: LinuxServer.io
+  category: Hackn0
   project_url: https://github.com/pymedusa/Medusa
   port_map: '8081'
