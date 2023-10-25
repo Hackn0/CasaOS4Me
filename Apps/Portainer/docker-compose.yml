@@ -1,6 +1,7 @@
 name: portainer-hackn0
 services:
   portainer:
+    container_name: portainer
     image: portainer/portainer-ce:latest
     deploy:
       resources:
@@ -37,12 +38,12 @@ services:
         - container: /data
           description:
             en_us: Portainer data directory
-    container_name: portainer
 x-casaos:
   architectures:
     - amd64
   author: Cp0204
   category: Hackn0
+  store_app_id: portainer
   description:
     en_us: Portainer is a lightweight management UI which allows you to easily manage your Docker environments. It is designed to be easy to use and offers full control over your Docker hosts and containers.
   developer: Portainer

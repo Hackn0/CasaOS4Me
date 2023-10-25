@@ -1,4 +1,4 @@
-name: watchtower-tmc
+name: watchtower-Hackn0
 services:
   app:
     container_name: watchtower
@@ -36,7 +36,7 @@ x-casaos:
   scheme: http
   tagline:
     en_us: A container-based solution for automating Docker container base image updates.
-  store_app_id: watchtower-tmc
+  store_app_id: watchtower
   title:
     en_us: Watchtower
   screenshot_link:
